@@ -1,0 +1,8 @@
+Dockerfile
+.dockerignore
+fuse-zip
+main.o
+.git
+.idea
+lib/*.o
+lib/*.a

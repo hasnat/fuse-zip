@@ -56,7 +56,17 @@ Those Russian who uses archives from the "other OS" should use CP866 as
 See FUSE documentation for details.
 
 Look at /var/log/user.log in case of any errors.
+# BUILD #
+To build install following and run `make`
 
+`g++ make pkgconfig libzip-dev fuse-dev`
+
+# DOCKER BUILD #
+`docker build -t fuse-zip .`
+
+or COPY it from built image here https://hub.docker.com/r/hasnat/fuse-zip
+
+`COPY --from=hasnat/fuse-zip /usr/local/bin/fuse-zip /usr/local/bin/fuse-zip`
 # PERFORMANCE #
 
 On a small archives fuse-zip have the same performance with commonly used
